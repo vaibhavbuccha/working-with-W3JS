@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+</head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- this is w3.js-->
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+<body id="i">
+	<div id="b" class="container">
+		<h1>this  is the new webpage</h1>
+			<button class="btn btn-danger" type="button" onclick="w3.hide('h1')"> hide heading!</button>
+			<button class="btn btn-success" type="button" onclick="w3.show('h1')"> show heading!</button>
+			<button class="btn btn-primary" onclick="w3.toggleShow('h1')">hide/show</button>
+			<button class="btn btn-block" onclick="w3.addStyle('#i','background-color','tomato')">change the background color</button>
+			
+	</div>
+	<hr>
+	<!--slidshow images-->
+	<div class="container">
+		<img class="nature" src="https://www.hdwallpapers.in/download/fresh_nature-1280x720.jpg" width="100%">
+		<img class="nature" src="https://www.visitportugal.com/sites/www.visitportugal.com/files/mediateca/23_660x371.jpg" width="100%">
+		<img class="nature" src="https://www.pixelstalk.net/wp-content/uploads/2016/06/HD-Nature-Photo-For-Mac.jpg" width="100%">
+		<script>
+			w3.slideshow(".nature",1000);
+		</script>
+	</div>
+	<hr>
+	<div class="container">
+		<!--this is searching -->
+		<h2> search the name in bellow list.</h2>
+		<input oninput="w3.filterHTML('#id01', 'li', this.value)" placeholder="Search for names..">
+
+		<ul id="id01">
+		  <li>aman jain</li>
+		  <li>nipun agarwal</li>
+		  <li>divyansh khandelwal</li>
+		  <li>prashant gupta</li>
+		  <li>uzba mahinor</li>
+		  <li>khyati bhutani</li>
+		  <li>prem pareek</li>
+		  <li>armaan chawala</li>
+		  <li>eshank dixit</li>
+		  <li>kartik chaudhary</li>
+		  <li>sourabh kumawat</li>
+		  <li>yukti mahobia</li>
+		</ul>
+		<hr>
+		<input oninput="w3.filterHTML('#id01', '.item', this.value)" placeholder="Search for names..">
+		</p>
+<!--searching in table-->
+		<table id="id01" border="1">
+		  <tr>
+		    <th><b>Customer</b></th>
+		    <th><b>City</b></th>
+		    <th><b>Country</b></th>
+		  </tr>
+		  <tr class="item">
+		    <td>Alfreds Futterkiste</td>
+		    <td>Berlin</td>
+		    <td>Germany</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Berglunds snabbköp</td>
+		    <td>Lule </td>
+		    <td>Sweden</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Centro comercial Moctezuma</td>
+		    <td>México D.F.</td>
+		    <td>Mexico</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Ernst Handel</td>
+		    <td>Graz</td>
+		    <td>Austria</td>
+		  </tr>
+		  <tr class="item">
+		    <td>FISSA Fabrica Inter. Salchichas S.A.</td>
+		    <td>Madrid</td>
+		    <td>Spain</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Galería del gastrónomo</td>
+		    <td>Barcelona</td>
+		    <td>Spain</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Island Trading</td>
+		    <td>Cowes</td>
+		    <td>UK</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Königlich Essen</td>
+		    <td>Brandenburg</td>
+		    <td>Germany</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Laughing Bacchus Wine Cellars</td>
+		    <td>Vancouver</td>
+		    <td>Canada</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Magazzini Alimentari Riuniti</td>
+		    <td>Bergamo</td>
+		    <td>Italy</td>
+		  </tr>
+		  <tr class="item">
+		    <td>North/South</td>
+		    <td>London</td>
+		    <td>UK</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Paris spécialités</td>
+		    <td>Paris</td>
+		    <td>France</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Rattlesnake Canyon Grocery</td>
+		    <td>Albuquerque</td>
+		    <td>USA</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Simons bistro</td>
+		    <td>København</td>
+		    <td>Denmark</td>
+		  </tr>
+		  <tr class="item">
+		    <td>The Big Cheese</td>
+		    <td>Portland</td>
+		    <td>USA</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Vaffeljernet</td>
+		    <td>Århus</td>
+		    <td>Denmark</td>
+		  </tr>
+		  <tr class="item">
+		    <td>Wolski Zajazd</td>
+		    <td>Warszawa</td>
+		    <td>Poland</td>
+		  </tr>
+		</table>
+		
+	</div>
+</body>
+</html>
